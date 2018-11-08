@@ -1,0 +1,10 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch=".." alias="origin" />
+
+  <default remote="github" revision="master" />
+
+  <project name="helse" path="." />
+  <project name="helse-soknadsvalidator"  />
+</manifest>
