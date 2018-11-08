@@ -1,3 +1,8 @@
+.repo
+helse-*
+
+.idea
+
 # Compiled class file
 *.class
 

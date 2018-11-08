@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="github" fetch=".." alias="origin" />
@@ -7,4 +6,6 @@
 
   <project name="helse" path="." />
   <project name="helse-soknadsvalidator"  />
+  <project name="helse-sykepengesoknadfilter"  />
+  <project name="helse-sykepengebehandling"  />
 </manifest>
