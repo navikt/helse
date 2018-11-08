@@ -8,4 +8,6 @@
   <project name="helse-soknadsvalidator"  />
   <project name="helse-sykepengesoknadfilter"  />
   <project name="helse-sykepengebehandling"  />
+  <project name="helse-streams"  />
+
 </manifest>
