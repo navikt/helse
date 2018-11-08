@@ -5,6 +5,7 @@
   <default remote="github" revision="master" />
 
   <project name="helse" path="." />
+  <project name="helse-streams"  />
   <project name="helse-soknadsvalidator"  />
   <project name="helse-sykepengesoknadfilter"  />
   <project name="helse-sykepengebehandling"  />
