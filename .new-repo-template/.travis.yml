@@ -1,0 +1,23 @@
+sudo: required
+language: java
+services:
+- docker
+before_install:
+- git clone https://github.com/navikt/github-apps-support.git
+- export PATH=`pwd`/github-apps-support/bin:$PATH
+- export INSTALLATION_TOKEN=$(generate-installation-token.sh `generate-jwt.sh ./travis/github-app.private-key.pem $GITHUB_APP_ID`)
+script:
+- make bump-version
+- make
+after_success:
+- echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin
+- git config user.name team-helse[bot]
+- git config user.email team-helse[bot]@users.noreply.github.com
+- "./travis/deploy.sh"
+before_cache:
+- rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+- rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+  - "$HOME/.gradle/caches/"
+  - "$HOME/.gradle/wrapper/"
