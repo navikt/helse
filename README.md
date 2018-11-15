@@ -56,6 +56,7 @@ Det eneste som mangler er å legge til secrets i `.travis.yml`:
 travis encrypt-file ./travis/github-app.private-key.pem ./travis/github-app.private-key.pem.enc --add --com
 travis encrypt DOCKER_USERNAME=brukernavn --add --com
 travis encrypt DOCKER_PASSWORD=passord --add --com
+travis encrypt GITHUB_APP=appId --add --com
 ```
 
 # Henvendelser
