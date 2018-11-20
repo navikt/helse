@@ -10,5 +10,6 @@
   <project name="helse-sykepengesoknadfilter" />
   <project name="helse-sykepengebehandling" />
   <project name="helse-oppslag" />
+  <project name="helse-iac" />
 
 </manifest>
