@@ -1,7 +1,7 @@
 rootProject.name = "helse-monorepo"
 
 includeBuild("helse-oppslag")
-includeBuild("helse-soknadsvalidator")
+includeBuild("helse-spleis")
 includeBuild("helse-sykepengebehandling")
-includeBuild("helse-sykepengesoknadfilter")
+includeBuild("helse-splitt")
 includeBuild("helse-streams")
