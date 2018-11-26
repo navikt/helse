@@ -10,6 +10,7 @@
   <project name="helse-splitt" />
   <project name="helse-spinne" />
   <project name="helse-sparkel" />
+  <project name="helse-spa" />
   <project name="helse-iac" />
 
 </manifest>
