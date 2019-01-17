@@ -12,6 +12,7 @@
   <project name="helse-sparkel" />
   <project name="helse-spa" />
   <project name="helse-iac" />
+  <project name="helse-maksdato" />
   <project name="pleiepengesoknad" />
 
 </manifest>
