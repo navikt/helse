@@ -1,5 +1,6 @@
 rootProject.name = "helse-monorepo"
 
+includeBuild("helse-sjekk")
 includeBuild("helse-sparkel")
 includeBuild("helse-spleis")
 includeBuild("helse-spa")
