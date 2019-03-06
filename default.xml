@@ -7,9 +7,6 @@
   <project name="helse" path="."/>
   <project name="helse-sjekk" />
   <project name="helse-streams" />
-  <project name="helse-spleis" />
-  <project name="helse-splitt" />
-  <project name="helse-spinne" />
   <project name="helse-sparkel" />
   <project name="helse-spa" />
   <project name="helse-iac" />
