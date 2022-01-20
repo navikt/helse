@@ -1,0 +1,113 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Subsumsjonsmelding for område helse",
+	"description": "Beskrivelse av format for meldinger for Subsumsjon på topic tbd.etterlevelse",
+	"required": [
+		"@id",
+		"@versjon",
+		"@event_name",
+		"@kilde",
+		"fødselsnummer",
+		"sporing",
+		"tidsstempel",
+		"lovverk",
+		"lovverksversjon",
+		"paragraf",
+		"input",
+		"output",
+		"oppfylt",
+		"versjonAvKode"
+	],
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"@id": {
+			"type": "string",
+			"format": "uuid"
+		},
+		"@versjon": {
+			"type": "string",
+			"description": "Versjon av Subsumsjonsmelding",
+			"enum": ["0.0.1"]
+		},
+		"@event_name": {
+			"type": "string",
+			"description": "Entydig identifikator på at det er en Subsumsjonsmelding",
+			"enum": ["Subsumsjon"]
+		},
+		"@kilde": {
+			"$ref": "#/definitions/gyldigString"
+		},
+		"versjonAvKode": {
+			"type": "string",
+			"format": "uri-reference"
+		},
+		"sporing": {
+			"type": "object",
+			"minProperties": 1,
+			"patternProperties": {
+				".{1,}": {
+					"$ref": "#/definitions/gyldigString"
+				}
+			}
+		},
+		"tidsstempel": {
+			"type": "string",
+			"format": "date-time"
+		},
+		"lovverk": {
+			"$ref": "#/definitions/gyldigString"
+		},
+		"lovverksversjon": {
+			"type": "string",
+			"format": "date"
+		},
+		"paragraf": {
+			"$ref": "#/definitions/gyldigString"
+		},
+		"ledd": {
+			"type": "number",
+			"minimum": 1
+		},
+		"punktum": {
+			"type": "number",
+			"minimum": 1
+		},
+		"bokstav": {
+			"$ref": "#/definitions/bokstav"
+		},
+		"fødselsnummer": {
+			"type": "string",
+			"pattern": "^[0-9]{11}$"
+		},
+		"organisasjonsnummer": {
+			"type": "string",
+			"pattern": "^[0-9]{9}$"
+		},
+		"input": {
+			"type": "object",
+			"minProperties": 1
+		},
+		"output": {
+			"type": "object",
+			"minProperties": 1
+		},
+		"oppfylt": {
+			"type": "boolean"
+		}
+	},
+	"definitions": {
+		"gyldigString": {
+			"type": "string",
+			"minLength": 1,
+			"pattern": "^[A-ZÆØÅa-zæøå0-9-_.§]+(?: +[A-ZÆØÅa-zæøå0-9-_.§]+)*$"
+
+		},
+		"bokstav": {
+			"type": "string",
+			"minLength": 1,
+			"pattern": "^[a-zæøå]{1}$"
+
+		}
+	}
+}
