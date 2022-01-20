@@ -15,7 +15,7 @@
 		"paragraf",
 		"input",
 		"output",
-		"oppfylt",
+		"utfall",
 		"versjonAvKode"
 	],
 	"type": "object",
@@ -28,12 +28,12 @@
 		"@versjon": {
 			"type": "string",
 			"description": "Versjon av Subsumsjonsmelding",
-			"enum": ["0.0.1"]
+			"enum": ["1.0.0"]
 		},
 		"@event_name": {
 			"type": "string",
 			"description": "Entydig identifikator på at det er en Subsumsjonsmelding",
-			"enum": ["Subsumsjon"]
+			"enum": ["subsumsjon"]
 		},
 		"@kilde": {
 			"$ref": "#/definitions/gyldigString"
@@ -63,7 +63,7 @@
 			"format": "date"
 		},
 		"paragraf": {
-			"$ref": "#/definitions/gyldigString"
+			"$ref": "#/definitions/paragraf"
 		},
 		"ledd": {
 			"type": "number",
@@ -92,8 +92,9 @@
 			"type": "object",
 			"minProperties": 1
 		},
-		"oppfylt": {
-			"type": "boolean"
+		"utfall": {
+			"type": "string",
+			"enum": ["VILKÅR_OPPFYLT", "VILKÅR_IKKE_OPPFYLT", "VILKÅR_UAVKLART", "VILKÅR_BEREGNET"]
 		}
 	},
 	"definitions": {
@@ -103,11 +104,15 @@
 			"pattern": "^[A-ZÆØÅa-zæøå0-9-_.§]+(?: +[A-ZÆØÅa-zæøå0-9-_.§]+)*$"
 
 		},
-		"bokstav": {
+		"paragraf": {
 			"type": "string",
 			"minLength": 1,
-			"pattern": "^[a-zæøå]{1}$"
+			"pattern": "^§[0-9]{1,}-[0-9]{1,}$"
 
+		},
+		"bokstav": {
+			"type": "string",
+			"pattern": "^[a-zæøå]{1}$"
 		}
 	}
 }
