@@ -14,7 +14,6 @@
 		"lovverksversjon",
 		"paragraf",
 		"input",
-		"output",
 		"utfall",
 		"versjonAvKode"
 	],
@@ -89,8 +88,8 @@
 			"minProperties": 1
 		},
 		"output": {
-			"type": "object",
-			"minProperties": 1
+			"type": "object"
+
 		},
 		"utfall": {
 			"type": "string",
@@ -106,9 +105,11 @@
 		},
 		"paragraf": {
 			"type": "string",
-			"minLength": 1,
-			"pattern": "^§[0-9]{1,}-[0-9]{1,}$"
-
+			"oneOf": [{
+            	"pattern": "^§[0-9]{1,}-[0-9]{1,}$"
+            }, {
+            	"pattern": "^§[0-9]{1,}$"
+            }]
 		},
 		"bokstav": {
 			"type": "string",
