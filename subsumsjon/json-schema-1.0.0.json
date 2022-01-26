@@ -93,7 +93,7 @@
 		},
 		"utfall": {
 			"type": "string",
-			"enum": ["VILKÅR_OPPFYLT", "VILKÅR_IKKE_OPPFYLT", "VILKÅR_UAVKLART", "VILKÅR_BEREGNET"]
+			"enum": ["VILKAR_OPPFYLT", "VILKAR_IKKE_OPPFYLT", "VILKAR_UAVKLART", "VILKAR_BEREGNET"]
 		}
 	},
 	"definitions": {
