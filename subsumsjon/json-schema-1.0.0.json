@@ -131,7 +131,10 @@
             "minProperties": 1
         },
         "output": {
-            "type": "object"
+            "type": [
+                "object",
+                "null"
+            ]
         },
         "utfall": {
             "type": "string",
