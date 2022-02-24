@@ -91,6 +91,24 @@
                     "items": {
                         "type": "string"
                     }
+                },
+                "overstyrtidslinje": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "overstyrinntekt": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "overstyrarbeidsforhold": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 }
             }
         },
