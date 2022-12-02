@@ -104,6 +104,12 @@
                         "type": "string"
                     }
                 },
+                "overstyrarbeidsgiveropplysninger": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
                 "overstyrarbeidsforhold": {
                     "type": "array",
                     "items": {
