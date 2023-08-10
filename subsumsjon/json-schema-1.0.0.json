@@ -125,7 +125,9 @@
         "lovverk": {
             "type": "string",
             "enum": [
-                "folketrygdloven"
+                "folketrygdloven",
+                "forvaltningsloven",
+                "trygderetten"
             ]
         },
         "lovverksversjon": {
