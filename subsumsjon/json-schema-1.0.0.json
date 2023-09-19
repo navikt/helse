@@ -116,6 +116,12 @@
                         "type": "string"
                     }
                 }
+                "saksbehandler": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
             }
         },
         "tidsstempel": {
