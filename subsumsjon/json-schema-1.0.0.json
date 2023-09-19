@@ -115,7 +115,7 @@
                     "items": {
                         "type": "string"
                     }
-                }
+                },
                 "saksbehandler": {
                     "type": "array",
                     "items": {
