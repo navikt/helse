@@ -133,7 +133,8 @@
             "enum": [
                 "folketrygdloven",
                 "forvaltningsloven",
-                "trygderetten"
+                "trygderetten",
+                "helsepersonelloven"
             ]
         },
         "lovverksversjon": {
