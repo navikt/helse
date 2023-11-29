@@ -121,6 +121,12 @@
                     "items": {
                         "type": "string"
                     }
+                },
+                "vilkarsgrunnlag": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 }
             }
         },
