@@ -28,7 +28,8 @@
             "type": "string",
             "description": "Versjon av Subsumsjonsmelding",
             "enum": [
-                "1.0.0"
+                "1.0.0",
+                "1.1.0"
             ]
         },
         "eventName": {
@@ -44,6 +45,14 @@
         "versjonAvKode": {
             "type": "string",
             "format": "uri-reference"
+        },
+        "vedtaksperiodeId": {
+            "type": "string",
+            "format": "uuid"
+        },
+        "behandlingId": {
+            "type": "string",
+            "format": "uuid"
         },
         "sporing": {
             "type": "object",
